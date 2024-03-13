@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
-  s.name = 'logstash-filter-example'
-  s.version         = '3.0.2'
+  s.name = 'logstash-filter-unicode-categories'
+  s.version         = '1.0.0'
   s.licenses = ['Apache License (2.0)']
-  s.summary = "This example filter replaces the contents of the message field with the specified value."
+  s.summary = "This filter takes in a value to get unicode categories for."
   s.description     = "This gem is a Logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install gemname. This gem is not a stand-alone program"
-  s.authors = ["Elastic"]
-  s.email = 'info@elastic.co'
-  s.homepage = "http://www.elastic.co/guide/en/logstash/current/index.html"
+  s.authors = ["Evan Vinciguerra"]
+  s.email = 'evanv511@gmail.com'
+  s.homepage = "https://github.com/evanvin/logstash-filter-unicode-categories"
   s.require_paths = ["lib"]
 
   # Files
@@ -19,5 +19,6 @@ Gem::Specification.new do |s|
 
   # Gem dependencies
   s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
+  s.add_runtime_dependency "unicode-categories", "~> 1.9"
   s.add_development_dependency 'logstash-devutils'
 end
