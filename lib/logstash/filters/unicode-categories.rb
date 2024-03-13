@@ -3,15 +3,15 @@ require "logstash/filters/base"
 require "logstash/namespace"
 require "unicode/categories"
 
-class LogStash::Filters::UnicodeCat < LogStash::Filters::Base
+class LogStash::Filters::UnicodeCategories < LogStash::Filters::Base
 
   # filter {
-  #   unicode-cat {
+  #   unicode-categories {
   #     data => "My String"
   #   }
   # }
   #
-  config_name "unicode-cat"
+  config_name "unicode-categories"
 
   config :data, :validate => :string, :default => ""
 
